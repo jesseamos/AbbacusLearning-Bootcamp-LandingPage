@@ -14,14 +14,6 @@ import { FinalCTA } from "@/components/site/FinalCTA";
 import { Footer } from "@/components/site/Footer";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "AbbacusLearning — Go Beyond Using AI. Learn How It Works." },
-      { name: "description", content: "A beginner-friendly AI bootcamp helping young Africans understand AI, build practical projects, and prepare for future opportunities in tech." },
-      { property: "og:title", content: "AbbacusLearning — Your entry into the future AI economy" },
-      { property: "og:description", content: "Beginner-friendly AI bootcamp for young Africans. Learn AI, build projects, join the community." },
-    ],
-  }),
   component: Index,
 });
 
