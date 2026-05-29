@@ -8,7 +8,7 @@ export function Footer() {
           <div className="flex items-center gap-2">
             <span className="grid h-7 w-7 place-items-center overflow-hidden rounded-lg bg-gradient-brand">
               <img 
-                src="/assets/images/abbacus-logo.jpeg" 
+                src="abbacus-logo.jpeg" 
                 alt="AbbacusLearning Logo"
                 width={28}      
                 height={28}     

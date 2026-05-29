@@ -8,7 +8,7 @@ const mentors = [
     company: "Lumen AI", 
     bio: "Building NLP tools for African languages, paving the way for next-gen linguistic model architectures.", 
     initials: "AO",
-    image: "/assets/images/profile-image.png" ,
+    image: "profile-image.png" ,
     gridClass: "lg:col-span-1 lg:row-span-1"
   },
   { 
@@ -17,7 +17,7 @@ const mentors = [
     company: "Stackr", 
     bio: "Scaled distributed engineering teams from 5 to 80 engineers while implementing robust, real-time banking pipelines globally.", 
     initials: "TA",
-    image: "/assets/images/profile-image.png" ,
+    image: "profile-image.png" ,
     gridClass: "lg:col-span-2 lg:row-span-2 min-h-[420px] md:min-h-full"
   },
   { 
@@ -26,7 +26,7 @@ const mentors = [
     company: "Kova", 
     bio: "Helped scale and launch 3 YC-backed startups across sub-Saharan markets focusing on unit economics.", 
     initials: "LM",
-    image: "/assets/images/profile-image.png" ,
+    image: "profile-image.png" ,
     gridClass: "lg:col-span-1 lg:row-span-1"
   },
 ];

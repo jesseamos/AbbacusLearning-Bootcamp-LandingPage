@@ -41,7 +41,7 @@ export function About() {
       <div className="relative mx-auto max-w-4xl px-6 text-center z-10">
       <div className="mx-auto mb-6 grid h-8 w-8 lg:h-14 lg:w-14 place-items-center overflow-hidden rounded-full bg-gradient-brand">
         <img 
-          src="/assets/images/abbacus-logo.jpeg" 
+          src="abbacus-logo.jpeg" 
           alt="AbbacusLearning Logo"
           width={56}
           height={56}

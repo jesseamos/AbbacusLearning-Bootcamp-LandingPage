@@ -38,7 +38,7 @@ export function Navbar() {
         <a href="#top" className="flex items-center gap-2 pl-2 group">
           <span className="grid h-7 w-7 place-items-center overflow-hidden rounded-lg bg-gradient-brand">
             <img 
-              src="/assets/images/abbacus-logo.jpeg" 
+              src="abbacus-logo.jpeg" 
               alt="AbbacusLearning Logo"
               width={28}      
               height={28}     

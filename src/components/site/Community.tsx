@@ -52,7 +52,7 @@ export function Community() {
               
               {/* Profile Image Asset Container */}
               <img
-                src="/assets/images/community.jpg" // Replace with your image location path
+                src="community.jpg" // Replace with your image location path
                 alt="Instructor Profile Showcase"
                 className="w-full h-full object-cover select-none grayscale"
               />

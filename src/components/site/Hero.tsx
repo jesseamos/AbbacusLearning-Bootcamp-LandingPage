@@ -108,7 +108,7 @@ export function Hero() {
               
               {/* Profile Image Asset Container */}
               <img
-                src="/assets/images/profile-image.png" // Replace with your image location path
+                src="profile-image.png" // Replace with your image location path
                 alt="Instructor Profile Showcase"
                 className="w-full h-full object-cover select-none"
               />
