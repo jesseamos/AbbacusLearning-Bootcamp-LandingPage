@@ -39,11 +39,12 @@ export function Community() {
                   {a}
                 </div>
               ))}
-              <div className="h-10 w-10 rounded-full bg-black grid place-items-center text-white text-[8px] font-bold ring-2 ring-background">
+              <div className="h-10 w-10 rounded-full bg-gradient-brand grid place-items-center text-white text-[8px] font-bold ring-2 ring-background">
                 +1,200
               </div>
             </div>
           </Reveal>
+          
         </div>
 
        <div className="gradient-border relative overflow-hidden  rounded-3xl">

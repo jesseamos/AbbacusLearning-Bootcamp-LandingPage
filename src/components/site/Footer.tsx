@@ -6,7 +6,15 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-14 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-brand text-white text-sm font-bold">A</span>
+            <span className="grid h-7 w-7 place-items-center overflow-hidden rounded-lg bg-gradient-brand">
+              <img 
+                src="/assets/images/abbacus-logo.jpeg" 
+                alt="AbbacusLearning Logo"
+                width={28}      
+                height={28}     
+                className="h-full w-full object-contain" 
+              />
+           </span>
             <span className="font-bold tracking-tight text-lg">AbbacusLearning</span>
           </div>
           <p className="mt-3 text-sm text-gradient-brand font-semibold">Your Future Counts.</p>
@@ -30,7 +38,7 @@ export function Footer() {
           <h4 className="text-sm font-semibold">Explore</h4>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li><a href="#about" className="hover:text-foreground">About</a></li>
-            <li><a href="#curriculum" className="hover:text-foreground">Curriculum</a></li>
+            {/* <li><a href="#curriculum" className="hover:text-foreground">Curriculum</a></li> */}
             <li><a href="#mentorship" className="hover:text-foreground">Mentorship</a></li>
             <li><a href="#testimonials" className="hover:text-foreground">Testimonials</a></li>
           </ul>
