@@ -2,35 +2,35 @@ import { Reveal } from "./Reveal";
 import { Play } from "lucide-react";
 
 const testimonials = [
-  { 
-    name: "Chioma E.", 
-    role: "Lagos · Cohort 3", 
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  {
+    name: "Chioma E.",
+    role: "Lagos · Cohort 3",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
-  { 
-    name: "Brian O.", 
-    role: "Nairobi · Cohort 2", 
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  {
+    name: "Brian O.",
+    role: "Nairobi · Cohort 2",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
-  { 
-    name: "Fatima D.", 
-    role: "Accra · Cohort 3", 
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  {
+    name: "Fatima D.",
+    role: "Accra · Cohort 3",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
-  { 
-    name: "Samuel K.", 
-    role: "Kampala · Cohort 1", 
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  {
+    name: "Samuel K.",
+    role: "Kampala · Cohort 1",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
-  { 
-    name: "Tariro M.", 
-    role: "Harare · Cohort 3", 
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  {
+    name: "Tariro M.",
+    role: "Harare · Cohort 3",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
-  { 
-    name: "Yusuf B.", 
-    role: "Abuja · Cohort 2", 
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  {
+    name: "Yusuf B.",
+    role: "Abuja · Cohort 2",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
   },
 ];
 
@@ -39,14 +39,14 @@ export function Testimonials() {
   const loop = [...testimonials, ...testimonials];
 
   return (
-    <section id="testimonials" className="relative py-28 overflow-hidden">
+    <section id="testimonials" className="relative py-28 overflow-hidden bg-white">
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center max-w-2xl mx-auto">
           <Reveal delay={0.05}>
             <h2 className="mt-3 text-4xl sm:text-5xl font-medium tracking-tight">
               Stories from <span className="text-gradient-brand">our cohorts.</span>
             </h2>
-          <p className="mt-6 text-lg text-muted-foreground max-w-3xl mx-auto mb-4  items-center text-center">
+            <p className="mt-6 text-lg text-muted-foreground max-w-3xl mx-auto mb-4  items-center text-center">
               See how ambitious builders across Africa transformed curiosity into real projects, remote opportunities, and thriving engineering careers through hands-on learning and mentorship.
             </p>
           </Reveal>
@@ -57,12 +57,12 @@ export function Testimonials() {
       <div className="mt-14 relative">
         <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-background to-transparent z-10" />
         <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-background to-transparent z-10" />
-        
+
         {/* Infinite scrolling row container */}
         <div className="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused]">
           {loop.map((t, i) => (
-            <div 
-              key={i} 
+            <div
+              key={i}
               className="w-[280px] sm:w-[320px] aspect-[9/16] shrink-0 gradient-border relative overflow-hidden rounded-3xl bg-zinc-950 group cursor-pointer"
             >
               {/* Vertical Video Embed */}

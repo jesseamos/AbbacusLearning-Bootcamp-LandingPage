@@ -30,23 +30,26 @@ export function Navbar() {
     >
       {/* PRIMARY CAPSULE HEADER */}
       <nav
-        className={`w-full max-w-5xl flex items-center justify-between rounded-full px-4 py-2 transition-all duration-300 ${
-          scrolled || isOpen ? "glass shadow-soft" : "bg-white/40 backdrop-blur-sm"
-        }`}
+        className={`w-full max-w-5xl flex items-center justify-between rounded-full px-4 py-2 transition-all duration-300 ${scrolled || isOpen ? "glass shadow-soft" : "bg-white/40 backdrop-blur-sm"
+          }`}
       >
         {/* LOGO AREA */}
         <a href="#top" className="flex items-center gap-2 pl-2 group">
-          <span className="grid h-7 w-7 place-items-center overflow-hidden rounded-lg bg-gradient-brand">
-            <img 
-              src="abbacus-logo.jpeg" 
+          <span className="grid h-[40px] w-[40px] place-items-center overflow-hidden rounded-[10px] bg-gradient-brand">
+            <img
+              src="abbacus-logo.jpeg"
               alt="AbbacusLearning Logo"
-              width={28}      
-              height={28}     
-              className="h-full w-full object-contain" 
+              width={40}
+              height={40}
+              className="h-full w-full object-contain"
             />
           </span>
           <span className="font-bold tracking-tight text-neutral-900 dark:text-white text-sm sm:text-base">
-            AbbacusLearning
+            <img
+              src="logo-text.png"
+              alt="AbbacusLearning Logo"
+              className="h-[25px] w-[120px] object-contain"
+            />
           </span>
         </a>
 

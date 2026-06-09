@@ -12,9 +12,9 @@ const items = [
 
 export function Beyond() {
   return (
-    <section className="relative py-28">
+    <section className="relative py-28 bg-white">
       <div className="mx-auto max-w-5xl px-6 text-center">
-       
+
         <Reveal delay={0.05}>
           <h2 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight leading-[1.1]">
             AI is more than generating{" "}
@@ -27,9 +27,9 @@ export function Beyond() {
             and shaping the future of technology.
           </p>
         </Reveal>
-    
 
-        <VideoPlayerComponent/>
+
+        <VideoPlayerComponent />
       </div>
     </section>
   );

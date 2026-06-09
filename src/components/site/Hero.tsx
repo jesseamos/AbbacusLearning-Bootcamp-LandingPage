@@ -12,7 +12,13 @@ const badges = [
 export function Hero() {
   return (
     <section id="top" className="relative pt-36 pb-24 overflow-hidden">
-      <div className="absolute inset-0 bg-grid bg-grid-fade" />
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-no-repeat bg-contain bg-center pointer-events-none"
+        style={{
+          backgroundImage: "url('pattern_bg.png')",
+        }}
+      />
 
       {/* Decorative Background Orbs */}
       {/* <div
@@ -30,6 +36,10 @@ export function Hero() {
         }}
       /> */}
 
+      {/* Optional grid overlay */}
+      <div className="absolute inset-0 bg-grid bg-grid-fade opacity-20" />
+
+      {/* Content */}
       <div className="relative mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-14 items-center">
         {/* Left Content Column */}
         <div>
@@ -40,7 +50,7 @@ export function Hero() {
             className="mt-5 text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.05]"
           >
             Go Beyond Using AI.{" "}
-            <span className="">Learn How It Works.</span>
+            <span className="text-brand-blue">Learn How It Works.</span>
           </motion.h1>
 
           <motion.p
@@ -105,7 +115,7 @@ export function Hero() {
           {/* Styled Border Wrapper */}
           <div className="gradient-border relative overflow-hidden  rounded-3xl">
             <div className="relative w-full h-[400px] sm:h-[480px] md:h-[540px] bg-gradient-to-br from-[#0e0a2e] via-[#1a1148] to-[#0c2a6b]">
-              
+
               {/* Profile Image Asset Container */}
               <img
                 src="profile-image.png" // Replace with your image location path
@@ -122,13 +132,13 @@ export function Hero() {
 
               {/* Subtle Linear Vignette Shadow at bottom */}
               <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
-              
+
               {/* Decorative Corner Flare */}
               <div className="absolute -bottom-6 -right-6 h-40 w-40 rounded-full bg-[#FFCE21]/20 blur-3xl pointer-events-none" />
             </div>
           </div>
 
-    
+
         </motion.div>
       </div>
     </section>

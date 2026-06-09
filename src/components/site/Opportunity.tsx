@@ -40,10 +40,14 @@ export function Opportunity() {
   const loop = [...cards, ...cards];
 
   return (
-    <section className="relative py-28 bg-slate-50 dark:bg-zinc-950 overflow-hidden">
+    <section className="relative pb-28  overflow-hidden">
       {/* Background patterns */}
-      <div className="absolute inset-0 bg-grid bg-grid-fade opacity-40 pointer-events-none" />
-
+      <div
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center pointer-events-none"
+        style={{
+          backgroundImage: "url('pattern_bg.png')",
+        }}
+      />
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
           <Reveal delay={0.05}>
@@ -75,7 +79,7 @@ export function Opportunity() {
             >
               {/* Black & White Background Image Asset Layer */}
               <div
-                className="absolute inset-0 bg-cover bg-center grayscale contrast-115 brightness-[0.45] group-hover:scale-105 transition-transform duration-700 ease-out"
+                className="absolute inset-0 bg-cover bg-center  contrast-115 brightness-[0.45] group-hover:scale-105 transition-transform duration-700 ease-out"
                 style={{
                   backgroundImage: `url(${c.imageUrl})`,
                 }}
@@ -83,9 +87,9 @@ export function Opportunity() {
 
               {/* Functional Content Structural Layout */}
               <div className="relative z-10 flex flex-col justify-between h-full p-6">
-                
+
                 {/* Title Segment Header with Action Indicators */}
-                <div className="self-start">
+                {/* <div className="self-start">
                   <a
                     href={`#${c.title.toLowerCase().replace(/\s+/g, "-")}`}
                     className="inline-flex items-center gap-1.5 text-base sm:text-lg font-semibold text-white transition-colors group/link"
@@ -93,7 +97,7 @@ export function Opportunity() {
                     {c.title}
                     <ArrowRight className="h-4 w-4 transition-transform duration-200 group-hover/link:translate-x-1 text-zinc-400 group-hover/link:text-white" />
                   </a>
-                </div>
+                </div> */}
 
                 {/* Frosted Information Footing Module */}
                 <div className="w-full bg-black/40 border border-white/10 rounded-2xl p-4 mt-auto backdrop-blur-md flex items-start gap-3">
