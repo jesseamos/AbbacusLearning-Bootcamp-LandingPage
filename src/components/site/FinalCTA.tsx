@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Reveal } from "./Reveal";
 import { ArrowRight, Users } from "lucide-react";
 import { motion } from "motion/react";
+import { PaymentModal } from "./PaymentModal";
 
 export function FinalCTA() {
   const words = [
@@ -97,13 +98,12 @@ export function FinalCTA() {
                   <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
                 </a>
 
-                <a
-                  href="#community"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white/5 backdrop-blur border border-white/10 text-white font-medium px-8 py-4 hover:bg-white/10 active:scale-98 transition"
-                >
-                  {/* <Users className="h-4 w-4 text-zinc-400" /> */}
-                  Join The Community
-                </a>
+                <PaymentModal>
+                  <button className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-white/5 backdrop-blur border border-white/10 text-white font-medium px-8 py-4 hover:bg-white/10 active:scale-98 transition cursor-pointer">
+                    <Users className="h-4 w-4 text-zinc-400" />
+                    Join The Community
+                  </button>
+                </PaymentModal>
               </div>
             </Reveal>
 
