@@ -27,8 +27,8 @@ function useTypewriter(text: string, speed = 40, delay = 600) {
 
 export function About() {
   // Breaking the mission text into an executing code syntax pattern
-  const codeLine1 = "const mission = \"To empower young Africans\";";
-  const codeLine2 = "const goal = \"with future-ready technology skills.\";";
+  const codeLine1 = "const belief = \"Talent is everywhere\";";
+  const codeLine2 = "const goal = \"Opportunity should be too\";";
 
   const typedLine1 = useTypewriter(codeLine1, 35, 300);
   const typedLine2 = useTypewriter(codeLine2, 35, 2000); // starts right after line 1 finishes
@@ -39,7 +39,7 @@ export function About() {
       <div className="absolute inset-0 bg-grid bg-grid-fade opacity-30 pointer-events-none" />
 
       <div className="relative mx-auto max-w-4xl px-6 text-center z-10">
-        <div className="mx-auto mb-6 grid h-[100px] w-[100px] lg:h-14 lg:w-14 place-items-center overflow-hidden rounded-[8px] bg-gradient-brand">
+        <div className="mx-auto mb-6 grid h-[50px] w-[50px] md:h-[100px] md:w-[100px] lg:h-14 lg:w-14 place-items-center overflow-hidden rounded-[8px] bg-gradient-brand">
           <img
             src="abbacus-logo.jpeg"
             alt="AbbacusLearning Logo"
@@ -48,22 +48,15 @@ export function About() {
             className="h-full w-full object-contain"
           />
         </div>
-        {/* <Reveal>
-          <span className="font-bold tracking-tight text-neutral-900 dark:text-white text-sm sm:text-basen  place-items-center">
-            <img
-              src="logo-text-white.png"
-              alt="AbbacusLearning Logo"
-              className="h-[25px] w-[120px] object-contain"
-            />
-          </span>
-        </Reveal> */}
-        {/* Main Brand Header Block */}
+
         <Reveal delay={0.05}>
           <h2 className="mt-4 lg:text-3xl sm:text-2xl font-medium tracking-tight leading-relaxed max-w-3xl mx-auto text-white">
-            AbbacusLearning is a tech education platform helping individuals with zero prior
-            tech knowledge understand technology through accessible, engaging, and
-            community-driven learning experiences.
+            We believe talent is everywhere.
+            Opportunity should be too.
           </h2>
+          <p className="mt-6 text-base sm:text-lg text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+            Abbacus was created to help ambitious Africans gain access to the knowledge, mentorship, community, and opportunities needed to thrive in the technology-driven future.
+          </p>
         </Reveal>
 
         {/* Premium Code Sandbox Terminal Display */}

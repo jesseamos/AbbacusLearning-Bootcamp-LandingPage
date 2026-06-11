@@ -35,7 +35,7 @@ export function Navbar() {
       >
         {/* LOGO AREA */}
         <a href="#top" className="flex items-center gap-2 pl-2 group">
-          <span className="grid h-[40px] w-[40px] place-items-center overflow-hidden rounded-[10px] bg-gradient-brand">
+          <span className="grid h-[20px] w-[20px] md:h-[40px] md:w-[40px] place-items-center overflow-hidden rounded-[10px] bg-gradient-brand">
             <img
               src="abbacus-logo.jpeg"
               alt="AbbacusLearning Logo"
@@ -48,7 +48,7 @@ export function Navbar() {
             <img
               src="logo-text.png"
               alt="AbbacusLearning Logo"
-              className="h-[25px] w-[120px] object-contain"
+              className="md:h-[25px] md:w-[120px] h-[20px] w-[80px] object-contain"
             />
           </span>
         </a>

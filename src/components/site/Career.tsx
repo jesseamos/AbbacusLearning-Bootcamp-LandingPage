@@ -7,32 +7,28 @@ import { AnimatePresence, motion } from "motion/react";
 const items = [
   {
     icon: FileText,
-    title: "Resume Reviews",
-    desc: "Get honest, face-to-face feedback from active engineering managers and tech recruiters. Learn exactly how to rewrite your project impact metrics to make your experience stand out to top companies.",
-    link: "#",
-    image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=800&q=80"
+    title: "Portfolio Development",
+    desc: "Turn your learning into proof of work by building projects that demonstrate your skills and growth throughout the bootcamp.",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80"
   },
   {
     icon: Linkedin,
-    title: "LinkedIn Optimization",
-    desc: "Stop applying to hundreds of jobs blindly. We help you rebuild your headline, profile architecture, and about sections to naturally attract recruiter inbounds and premium tech roles.",
-    link: "#",
-    image: "https://images.unsplash.com/photo-1616469829581-73993eb86b02?auto=format&fit=crop&w=800&q=80"
+    title: "Professional Branding",
+    desc: "Learn how to present your skills, experiences, and projects in a way that helps you stand out online and professionally.",
+    image: "https://images.unsplash.com/photo-1557200134-90327ee9fafa?auto=format&fit=crop&w=600&q=80"
   },
   {
     icon: Github,
-    title: "GitHub Architecture",
-    desc: "Your code should sell itself. We guide you through creating clean repository layouts, writing professional README documentations, and structuring commit histories that prove you build production-ready code.",
-    link: "#",
-    image: "https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?auto=format&fit=crop&w=800&q=80"
+    title: "Project Showcase",
+    desc: "Build a portfolio of practical AI and data science projects that reflect what you've learned and what you can create.",
+    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80"
   },
   {
     icon: Compass,
-    title: "Remote Career Guidance",
-    desc: "Navigate the global remote landscape confidently. Learn how to look for international contracts, negotiate global compensation bands, and handle cross-border tax compliance rules effortlessly.",
-    link: "#",
-    image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
-  },
+    title: "Career Navigation",
+    desc: "Gain clarity on different paths in AI, Data Science, Software Engineering, startups, freelancing, and emerging technology.",
+    image: "https://images.unsplash.com/photo-1489533119213-66a5cd877091?auto=format&fit=crop&w=600&q=80"
+  }
 ];
 
 export function Career() {
@@ -51,6 +47,16 @@ export function Career() {
 
   return (
     <section id="career-clinic" className="relative py-28 bg-secondary/40 overflow-hidden">
+      <h2 className="text-4xl sm:text-5xl font-medium tracking-tight leading-tight px-6 mb-6">
+        Learn The Skills.
+        <br />
+        <span className="text-brand-blue">
+          Navigate The Opportunities.
+        </span>
+      </h2>
+      <p className="px-6 mb-6 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
+        Building skills is only part of the journey. We help you understand the technology landscape, showcase your work, build your professional presence, and prepare for future opportunities in tech.
+      </p>
       <div className="relative mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-14 items-center">
 
         {/* LEFT COLUMN: Clean Image Card Showcase */}
@@ -108,15 +114,6 @@ export function Career() {
                   {currentItem.desc}
                 </p>
 
-                <div className="mt-8">
-                  <a
-                    href={currentItem.link}
-                    className="inline-flex items-center rounded-full cta-primary-button  text-white font-medium px-6 py-3 shadow-glow hover:brightness-110 transition cursor-pointer group"
-                  >
-                    Learn more about this track
-                    <ArrowRight className="h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </div>
               </motion.div>
             </AnimatePresence>
           </div>
@@ -128,8 +125,8 @@ export function Career() {
                 key={i}
                 onClick={() => setActiveIndex(i)}
                 className={`h-1.5 rounded-full transition-all duration-300 ${activeIndex === i
-                    ? "w-5 bg-gradient-brand"
-                    : "w-1.5 bg-zinc-700 hover:bg-zinc-500"
+                  ? "w-5 bg-gradient-brand"
+                  : "w-1.5 bg-zinc-700 hover:bg-zinc-500"
                   }`}
                 aria-label={`Switch to slide ${i + 1}`}
               />

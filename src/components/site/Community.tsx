@@ -19,14 +19,13 @@ export function Community() {
 
           <Reveal delay={0.05}>
             <h2 className="mt-3 text-4xl sm:text-5xl font-medium tracking-tight leading-tight">
-              Learn With A Community{" "}
-              <span className="">Building The Future.</span>
+              Don't Learn Alone.<br />
+              <span className="text-brand-blue"> Grow With Builders.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-lg text-muted-foreground max-w-lg">
-              Join WhatsApp and Discord channels filled with curious learners, mentors, and
-              builders. Form teams, ship projects, and grow together.
+              The fastest way to grow isn't learning alone. It's learning with people who challenge you, support you, and are building toward the same future.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
@@ -39,7 +38,7 @@ export function Community() {
                   {a}
                 </div>
               ))}
-              <div className="h-10 w-10 rounded-full bg-gradient-brand grid place-items-center text-white text-[8px] font-bold ring-2 ring-background">
+              <div className="h-10 w-10 rounded-full bg-brand-blue grid place-items-center text-white text-[8px] font-bold ring-2 ring-background">
                 +1,200
               </div>
             </div>

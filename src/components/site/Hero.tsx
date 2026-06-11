@@ -1,12 +1,12 @@
 import React from "react";
 import { motion } from "motion/react";
-import { Play, Sparkles, Users, Wrench, GraduationCap } from "lucide-react";
+import { Play, DollarSign, Briefcase, Wrench, GraduationCap, Globe } from "lucide-react";
 
 const badges = [
-  { icon: GraduationCap, label: "Beginner Friendly" },
-  { icon: Users, label: "Live Mentorship" },
-  { icon: Sparkles, label: "Community Learning" },
-  { icon: Wrench, label: "Project-Based" },
+  { icon: DollarSign, label: "Earn in Dollars" },
+  { icon: GraduationCap, label: "No Degree Needed" },
+  { icon: Briefcase, label: "Remote Jobs" },
+  { icon: Globe, label: "Work from Nigeria" },
 ];
 
 export function Hero() {
@@ -49,8 +49,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.05 }}
             className="mt-5 text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.05]"
           >
-            Go Beyond Using AI.{" "}
-            <span className="text-brand-blue">Learn How It Works.</span>
+            Land Your First
+            AI Job In <span className="text-brand-blue">Faster</span>
           </motion.h1>
 
           <motion.p
@@ -59,8 +59,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="mt-6 text-lg text-muted-foreground max-w-xl"
           >
-            A beginner-friendly AI bootcamp helping young Africans understand Artificial
-            Intelligence, build practical projects, and prepare for future opportunities in tech.
+            Learn AI through real-world projects, expert mentorship, and a community built for future opportunities.
           </motion.p>
 
           <motion.div
@@ -75,30 +74,15 @@ export function Hero() {
             >
               Join Free Intro AI Class
             </a>
-            <a
+            {/* <a
               href="#showcase"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-white px-6 py-3 font-medium hover:bg-secondary transition cursor-pointer"
             >
               <Play className="h-4 w-4" /> View Profile
-            </a>
+            </a> */}
           </motion.div>
 
-          {/* <motion.ul
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            className="mt-8 flex flex-wrap gap-2"
-          >
-            {badges.map((b) => (
-              <li
-                key={b.label}
-                className="inline-flex items-center gap-2 rounded-full bg-white border border-border px-3 py-1.5 text-xs text-muted-foreground shadow-soft"
-              >
-                <b.icon className="h-3.5 w-3.5 text-brand-purple" />
-                {b.label}
-              </li>
-            ))}
-          </motion.ul> */}
+
         </div>
 
         {/* Right Animated Image Column */}

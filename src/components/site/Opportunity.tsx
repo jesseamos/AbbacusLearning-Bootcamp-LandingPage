@@ -4,35 +4,30 @@ import { ArrowRight } from "lucide-react";
 
 const cards = [
   {
-    title: "Remote Opportunities",
-    desc: "Tap into a borderless job market and work with global teams from anywhere in Africa.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=500&auto=format&fit=crop&q=60",
+    title: "Real-World Projects",
+    desc: "Build practical AI and data science projects that demonstrate your skills and strengthen your portfolio.",
+    imageUrl: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80"
   },
   {
-    title: "AI Startups",
-    desc: "Join — or launch — the next wave of African startups building with intelligent systems.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1634017839464-5c339ebe3cb4?w=500&auto=format&fit=crop&q=60",
+    title: "Industry Mentorship",
+    desc: "Learn directly from founders, engineers, and technology leaders building products across Africa.",
+    imageUrl: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=600&q=80"
   },
   {
-    title: "Global Workforce",
-    desc: "Compete and collaborate with peers across continents, on equal footing.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1617396900799-f4ec2b43c7ae?w=500&auto=format&fit=crop&q=60",
+    title: "Career Growth",
+    desc: "Receive guidance on resumes, LinkedIn optimization, portfolios, and professional positioning.",
+    imageUrl: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
   },
   {
-    title: "Future Skills",
-    desc: "Master the foundational skills that will define the next decade of technology.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=500&auto=format&fit=crop&q=60",
+    title: "Community Learning",
+    desc: "Collaborate with ambitious learners, participate in challenges, and grow alongside your peers.",
+    imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80"
   },
   {
-    title: "Portfolio Projects",
-    desc: "Graduate with real, shippable projects that prove what you can build.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=500&auto=format&fit=crop&q=60",
-  },
+    title: "Future-Ready Skills",
+    desc: "Develop AI, Machine Learning, Python, and Data Science skills that remain relevant in the years ahead.",
+    imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80"
+  }
 ];
 
 export function Opportunity() {
@@ -52,13 +47,15 @@ export function Opportunity() {
         <div className="max-w-2xl">
           <Reveal delay={0.05}>
             <h2 className="mt-3 text-4xl sm:text-5xl font-medium tracking-tight leading-tight text-neutral-900 dark:text-neutral-50">
-              Your entry into the{" "}
-              <span className="text-gradient-brand">future AI economy.</span>
+              Build Skills For The<br />
+              <span className="text-gradient-brand"> AI Economy.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed">
-              Step into a new era where AI is reshaping industries, creating global opportunities, and redefining the future of work. Learn the skills that matter, build real-world projects, and position yourself to thrive.
+              Artificial Intelligence is transforming industries around the world.
+              Learn practical skills, build real projects, gain mentorship, and
+              position yourself for opportunities in a rapidly changing global workforce.
             </p>
           </Reveal>
         </div>

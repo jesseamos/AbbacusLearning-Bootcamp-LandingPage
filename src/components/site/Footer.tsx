@@ -6,16 +6,24 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-14 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <span className="grid h-7 w-7 place-items-center overflow-hidden rounded-lg bg-gradient-brand">
-              <img 
-                src="abbacus-logo.jpeg" 
-                alt="AbbacusLearning Logo"
-                width={28}      
-                height={28}     
-                className="h-full w-full object-contain" 
-              />
-           </span>
-            <span className="font-bold tracking-tight text-lg">AbbacusLearning</span>
+            <a href="#top" className="flex items-center gap-2 pl-2 group">
+              <span className="grid h-[20px] w-[20px] md:h-[40px] md:w-[40px] place-items-center overflow-hidden rounded-[10px] bg-gradient-brand">
+                <img
+                  src="abbacus-logo.jpeg"
+                  alt="AbbacusLearning Logo"
+                  width={40}
+                  height={40}
+                  className="h-full w-full object-contain"
+                />
+              </span>
+              <span className="font-bold tracking-tight text-neutral-900 dark:text-white text-sm sm:text-base">
+                <img
+                  src="logo-text.png"
+                  alt="AbbacusLearning Logo"
+                  className="md:h-[25px] md:w-[120px] h-[20px] w-[80px] object-contain"
+                />
+              </span>
+            </a>
           </div>
           <p className="mt-3 text-sm text-gradient-brand font-semibold">Your Future Counts.</p>
           <p className="mt-3 text-sm text-muted-foreground max-w-sm">

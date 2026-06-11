@@ -12,40 +12,28 @@ import { useEffect, useState } from "react";
 const items = [
   {
     icon: BadgeDollarSign,
-    title: "Capital Infusion",
-    category: "Financial Support",
-    description: "Fuel your project with non-dilutive funding. Winners walk away with a share of the cash pool to scale prototypes into real products.",
-    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
-    borderColor: "hover:border-emerald-500/30",
-    badgeColor: "text-emerald-600 bg-emerald-50"
+    title: "AI Innovation Challenge",
+    description: "Put your skills to the test by solving real-world problems with AI alongside your team.",
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
   },
   {
     icon: GraduationCap,
-    title: "Elite Mentorship",
-    category: "Strategic Growth",
-    description: "Get 1-on-1 guidance from seasoned technical founders and industry experts to refine your architecture, strategy, and pitch.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
-    borderColor: "hover:border-blue-500/30",
-    badgeColor: "text-blue-600 bg-blue-50"
+    title: "Mentor Feedback",
+    description: "Present your work and receive guidance from experienced founders, engineers, and technology leaders.",
+    image: "https://images.unsplash.com/photo-1521791136368-1a46827d0af1?auto=format&fit=crop&w=600&q=80"
   },
   {
     icon: Briefcase,
-    title: "Pipeline Access",
-    category: "Career Acceleration",
-    description: "Fast-track your career with direct interview loops and placement pipelines at top-tier AI startups and tech enterprises.",
-    image: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?auto=format&fit=crop&w=800&q=80",
-    borderColor: "hover:border-purple-500/30",
-    badgeColor: "text-purple-600 bg-purple-50"
+    title: "Project Showcase",
+    description: "Demonstrate what you've built through presentations, demos, and community showcases.",
+    image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=600&q=80"
   },
   {
     icon: Star,
-    title: "Global Spotlight",
-    category: "Brand Visibility",
-    description: "Featured demos will be showcased to thousands of developers, VC scouts, and tech leaders via our dedicated demo day channels.",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80",
-    borderColor: "hover:border-amber-500/30",
-    badgeColor: "text-amber-600 bg-amber-50"
-  },
+    title: "Recognition & Opportunities",
+    description: "Outstanding projects may receive recognition, mentorship opportunities, and increased visibility within our network.",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=600&q=80"
+  }
 ];
 
 export function Competition() {
@@ -82,16 +70,17 @@ export function Competition() {
         <div className="max-w-3xl mb-16">
           <Reveal delay={0.05}>
 
-            <h2 className="text-4xl sm:text-6xl tracking-tighter leading-none font-medium ">
-              Build. Compete. <br />
-              <span className="text-brand-blue">
-                Get spotlighted
+            <h2 className="text-4xl sm:text-6xl tracking-tighter leading-none font-medium">
+              Build Something
+              <br />
+              <span className="text-gradient-brand">
+                Worth Showing.
               </span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              Compete for cash, mentorship, and the recognition you deserve. Whether you’re refining an existing project or kicking off something new, this is your platform to shine on a pan-African stage.
+              Learning is important, but building is where growth happens. Throughout the bootcamp, you'll work on real projects, collaborate with teammates, present your ideas, and gain valuable feedback from mentors and industry professionals.
             </p>
           </Reveal>
         </div>
@@ -152,14 +141,6 @@ export function Competition() {
                     {currentItem.description}
                   </p>
 
-                  <div className="mt-6">
-                    <a
-                      className="inline-flex items-center gap-2 rounded-full cta-primary-button text-xs  tracking-wider text-white font-medium px-5 py-3  transition cursor-pointer group"
-                    >
-                      <span>Learn more about this track</span>
-                      <ArrowRight className="h-3.5 w-3.5 transform group-hover:translate-x-1 transition-transform text-zinc-400 group-hover:text-white" />
-                    </a>
-                  </div>
                 </motion.div>
               </AnimatePresence>
             </div>
