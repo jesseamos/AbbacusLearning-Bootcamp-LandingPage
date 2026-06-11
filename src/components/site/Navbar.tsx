@@ -105,7 +105,7 @@ export function Navbar() {
                   <a
                     href={l.href}
                     onClick={() => setIsOpen(false)} // Auto-closes panel when target hash clicked
-                    className="block px-4 py-2.5 rounded-xl text-zinc-300 hover:text-white hover:bg-white/5 transition-colors font-medium text-sm"
+                    className="block px-4 py-2.5 rounded-xl  hover:text-white hover:bg-white/5 transition-colors font-medium text-sm"
                   >
                     {l.label}
                   </a>
