@@ -75,16 +75,12 @@ export function Mentorship() {
                   transition={{ duration: 0.35, ease: "easeOut" }}
                 >
 
-                  <div className="max-w-3xl mb-16">
+                  <div className="max-w-3xl mb-6">
                     <Reveal delay={0.05}>
 
-                      <h2 className="text-4xl sm:text-6xl tracking-tighter leading-none font-medium">
-                        Learn From Builders.
-                        <br />
-                        <span>
-                          Not Just Teachers.
-                        </span>
-                      </h2>
+                      <h3 className="text-4xl sm:text-3xl tracking-tighter leading-none font-medium">
+                        How Flowk Is Using AI To Transform <br /> Customer Support Across Africa
+                      </h3>
                     </Reveal>
                     <Reveal delay={0.1}>
                       <p className="mt-6 text-base sm:text-lg max-w-2xl leading-relaxed">
@@ -92,9 +88,7 @@ export function Mentorship() {
                       </p>
                     </Reveal>
                   </div>
-                  <h3 className="text-3xl sm:text-4xl font-medium tracking-tight">
-                    How Flowk Is Using AI To Transform Customer Support Across Africa
-                  </h3>
+
 
                   <p className="mt-4 text-sm sm:text-base  leading-relaxed max-w-xl">
                     {speaker.bio}

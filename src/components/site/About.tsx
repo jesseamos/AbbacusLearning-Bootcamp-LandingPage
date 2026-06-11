@@ -83,7 +83,7 @@ export function About() {
                 {/* <span className="text-purple-400">const</span> */}
                 <span className="text-blue-400 ml-1.5">mission</span>
                 <span className="text-zinc-400 ml-1.5">=</span>
-                <span className="text-emerald-400 ml-1.5">"{typedLine1.slice(17, -2)}"</span>
+                <span className="text-emerald-400 ml-1.5">"{typedLine1.slice(16, -2)}"</span>
                 <span className="text-zinc-400">;</span>
                 {typedLine1.length > 0 && typedLine1.length < codeLine1.length && (
                   <motion.span
