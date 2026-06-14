@@ -49,8 +49,8 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.05 }}
             className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight leading-[1.1]"
           >
-            Build the ML Portfolio That<br className="hidden sm:inline" />
-            <span className="text-brand-blue">Global Teams Hire For.</span>
+            Land Your First<br className="hidden sm:inline" />
+            <span className="text-brand-blue">AI Job Faster</span>
           </motion.h1>
 
           <motion.p
@@ -59,7 +59,7 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.15 }}
             className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed"
           >
-            Stop copying tutorials. Build production-grade ML models, deploy them to the cloud, and get direct mentorship from engineers who actually write code for a living.
+            Build job-ready AI skills through real-world team projects and career mentorship
           </motion.p>
 
           <motion.div
@@ -72,7 +72,7 @@ export function Hero() {
               href="#cta"
               className="inline-flex items-center rounded-full cta-primary-button text-white font-medium px-8 py-4 shadow-glow hover:brightness-110 transition cursor-pointer text-base"
             >
-              Join Free Intro Class
+              Join Bootcamp
             </a>
           </motion.div>
 
