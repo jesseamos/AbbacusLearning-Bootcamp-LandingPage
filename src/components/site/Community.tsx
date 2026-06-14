@@ -12,7 +12,13 @@ const avatars = ["A", "K", "Z",];
 
 export function Community() {
   return (
-    <section id="community" className="relative py-28 bg-white">
+    <section id="community" className="relative py-28">
+      <div
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center pointer-events-none"
+        style={{
+          backgroundImage: "url('pattern_bg.png')",
+        }}
+      />
       <div className="absolute bg-white" />
       <div className="relative mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-14 items-center">
         <div>

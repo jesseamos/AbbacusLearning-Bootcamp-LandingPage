@@ -35,14 +35,9 @@ export function Opportunity() {
   const loop = [...cards, ...cards];
 
   return (
-    <section className="relative pb-28  overflow-hidden">
+    <section className="relative  py-28  overflow-hidden bg-white">
       {/* Background patterns */}
-      <div
-        className="absolute inset-0 bg-no-repeat bg-cover bg-center pointer-events-none"
-        style={{
-          backgroundImage: "url('pattern_bg.png')",
-        }}
-      />
+
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="max-w-2xl">
           <Reveal delay={0.05}>

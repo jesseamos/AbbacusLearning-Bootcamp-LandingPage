@@ -22,7 +22,7 @@ function Index() {
     <main className="relative bg-slate-100">
       <Navbar />
       <Hero />
-      <Beyond />
+      {/* <Beyond /> */}
       <Opportunity />
       {/* <Curriculum /> */}
       <Community />

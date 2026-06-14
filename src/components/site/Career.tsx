@@ -47,17 +47,30 @@ export function Career() {
 
   return (
     <section id="career-clinic" className="relative py-28 bg-secondary/40 overflow-hidden">
-      <h2 className="text-4xl sm:text-5xl font-medium tracking-tight leading-tight px-6 mb-6">
-        Learn The Skills.
-        <br />
-        <span className="text-brand-blue">
-          Navigate The Opportunities.
-        </span>
-      </h2>
-      <p className="px-6 mb-6 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
-        Building skills is only part of the journey. We help you understand the technology landscape, showcase your work, build your professional presence, and prepare for future opportunities in tech.
-      </p>
-      <div className="relative mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-14 items-center">
+      {/* FIXED: Added z-0 to keep the background securely underneath everything */}
+      <div
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center pointer-events-none z-0"
+        style={{
+          backgroundImage: "url('pattern_bg.png')",
+        }}
+      />
+
+      {/* FIXED: Added relative z-10 so the heading stacks properly over the background */}
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
+        <h2 className="text-4xl sm:text-5xl font-medium tracking-tight leading-tight mb-6">
+          Learn The Skills.
+          <br />
+          <span className="text-brand-blue">
+            Navigate The Opportunities.
+          </span>
+        </h2>
+        <p className="mb-6 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
+          Building skills is only part of the journey. We help you understand the technology landscape, showcase your work, build your professional presence, and prepare for future opportunities in tech.
+        </p>
+      </div>
+
+      {/* FIXED: Added z-10 to the grid container as well */}
+      <div className="relative z-10 mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-14 items-center">
 
         {/* LEFT COLUMN: Clean Image Card Showcase */}
         <div className="gradient-border relative overflow-hidden rounded-3xl order-2 lg:order-1">
@@ -77,7 +90,7 @@ export function Career() {
               />
             </AnimatePresence>
 
-            {/* Mac-style Window Dot Accents matching your community design */}
+            {/* Mac-style Window Dot Accents */}
             <div className="absolute top-4 left-4 flex gap-1.5 z-10 pointer-events-none">
               <span className="h-2.5 w-2.5 rounded-full bg-white/40" />
               <span className="h-2.5 w-2.5 rounded-full bg-white/40" />
@@ -95,7 +108,6 @@ export function Career() {
         {/* RIGHT COLUMN: Copy and Controls */}
         <div className="order-1 lg:order-2">
 
-
           {/* Constraining the heights here prevents layout shift during text switches */}
           <div className="min-h-[260px] sm:min-h-[220px] md:min-h-[200px] flex flex-col justify-center mt-3">
             <AnimatePresence mode="wait">
@@ -106,7 +118,7 @@ export function Career() {
                 exit={{ opacity: 0, x: -15 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
               >
-                <h2 className="text-4xl sm:text-5xl font-medium tracking-tight leading-tight  flex items-center gap-3">
+                <h2 className="text-4xl sm:text-5xl font-medium tracking-tight leading-tight flex items-center gap-3">
                   <span>{currentItem.title}</span>
                 </h2>
 

@@ -10,9 +10,9 @@ import {
 } from "@/components/ui/dialog";
 
 const bankDetails = {
-  bank: "GTBank",
-  name: "Abbacus Learning Solutions",
-  number: "0123456789",
+  bank: "Opay",
+  name: "Jesse Anietie Amos",
+  number: "9135652318",
 };
 
 const whatsappNumber = "+23490928666";

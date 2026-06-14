@@ -49,19 +49,7 @@ export function Competition() {
   const currentItem = items[activeIndex];
 
   return (
-    <section id="career-clinic" className="relative py-8 overflow-hidden">
-
-      {/* FIXED: Background layer isolated behind a z-0 index wrap */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-        <div
-          className="absolute inset-0 bg-no-repeat bg-contain bg-center "
-          style={{
-            backgroundImage: "url('pattern_bg.png')",
-          }}
-        />
-        {/* Corner Decorative Flare */}
-        <div className="absolute -bottom-10 -right-10 h-72 w-72 rounded-full bg-brand-blue/15 blur-3xl" />
-      </div>
+    <section id="career-clinic" className="relative py-28 overflow-hidden bg-white">
 
       {/* FOREGROUND LAYOUT CONTAINER (z-10 ensures absolute visibility over pattern) */}
       <div className="relative z-10 mx-auto max-w-7xl px-6">

@@ -1,6 +1,28 @@
 import { Twitter, Instagram, Linkedin, Youtube, Mail, MessageCircle } from "lucide-react";
 
 export function Footer() {
+  const socials = [
+    {
+      name: "Twitter",
+      icon: Twitter,
+      url: "https://x.com/abaccuslearning"
+    },
+    {
+      name: "Instagram",
+      icon: Instagram,
+      url: "https://www.instagram.com/abaccuslearning/"
+    },
+    {
+      name: "Linkedin",
+      icon: Linkedin,
+      url: "https://www.linkedin.com/in/abbacus-learning-9247503a2/"
+    },
+    {
+      name: "Youtube",
+      icon: Youtube,
+      url: "https://www.youtube.com/@AbbacusLearning"
+    }
+  ]
   return (
     <footer className="relative border-t border-border">
       <div className="mx-auto max-w-7xl px-6 py-14 grid md:grid-cols-4 gap-10">
@@ -30,13 +52,13 @@ export function Footer() {
             Helping young Africans go from using AI to building with it.
           </p>
           <div className="mt-5 flex gap-2">
-            {[Twitter, Instagram, Linkedin, Youtube].map((Icon, i) => (
+            {socials.map((social, i) => (
               <a
                 key={i}
-                href="#"
+                href={social.url}
                 className="grid place-items-center h-9 w-9 rounded-full border border-border hover:bg-secondary hover:text-brand-purple transition"
               >
-                <Icon className="h-4 w-4" />
+                <social.icon className="h-4 w-4" />
               </a>
             ))}
           </div>
@@ -55,8 +77,8 @@ export function Footer() {
         <div>
           <h4 className="text-sm font-semibold">Get in touch</h4>
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand-purple" /> hello@abbacuslearning.com</li>
-            <li className="flex items-center gap-2"><MessageCircle className="h-4 w-4 text-brand-blue" /> WhatsApp Community</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-brand-purple" /><a href="mailto:abaccus29@gmail.com">abaccus29@gmail.com</a></li>
+            <li className="flex items-center gap-2"><MessageCircle className="h-4 w-4 text-brand-blue" /><a href="https://chat.whatsapp.com/G3aVPY9CmonGSdczV8QkW5">WhatsApp Community</a></li>
           </ul>
         </div>
       </div>
