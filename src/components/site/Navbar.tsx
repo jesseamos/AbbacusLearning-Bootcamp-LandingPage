@@ -26,7 +26,7 @@ export function Navbar() {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="fixed top-4 inset-x-0 z-50 flex flex-col items-center px-4 gap-2"
+      className="fixed top-16 sm:top-12 inset-x-0 z-40 flex flex-col items-center px-4 gap-2"
     >
       {/* PRIMARY CAPSULE HEADER */}
       <nav

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { CountdownBanner } from "@/components/site/CountdownBanner";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
 import { Beyond } from "@/components/site/Beyond";
@@ -20,6 +21,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="relative bg-slate-100">
+      <CountdownBanner />
       <Navbar />
       <Hero />
       {/* <Beyond /> */}
