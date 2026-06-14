@@ -68,7 +68,7 @@ export function Competition() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              Learning is important, but building is where growth happens. Throughout the bootcamp, you'll work on real projects, collaborate with teammates, present your ideas, and gain valuable feedback from mentors and industry professionals.
+              Recruiters don't care about certificates. They care about working code. You'll build team projects designed to prove you can solve real business problems, version control code on GitHub, and pitch to international companies.
             </p>
           </Reveal>
         </div>

@@ -47,19 +47,19 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.05 }}
-            className="mt-5 text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight leading-[1.05]"
+            className="mt-5 text-4xl sm:text-5xl lg:text-6xl font-medium tracking-tight leading-[1.1]"
           >
-            Land Your First
-            AI Job In <span className="text-brand-blue">Faster</span>
+            Build the ML Portfolio That<br className="hidden sm:inline" />
+            <span className="text-brand-blue">Global Teams Hire For.</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.15 }}
-            className="mt-6 text-lg text-muted-foreground max-w-xl"
+            className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed"
           >
-            Learn AI through real-world projects, expert mentorship, and a community built for future opportunities.
+            Stop copying tutorials. Build production-grade ML models, deploy them to the cloud, and get direct mentorship from engineers who actually write code for a living.
           </motion.p>
 
           <motion.div
@@ -70,16 +70,10 @@ export function Hero() {
           >
             <a
               href="#cta"
-              className="inline-flex items-center rounded-full cta-primary-button  text-white font-medium px-6 py-3 shadow-glow hover:brightness-110 transition cursor-pointer"
+              className="inline-flex items-center rounded-full cta-primary-button text-white font-medium px-8 py-4 shadow-glow hover:brightness-110 transition cursor-pointer text-base"
             >
-              Join Free Intro AI Class
+              Join Free Intro Class
             </a>
-            {/* <a
-              href="#showcase"
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-white px-6 py-3 font-medium hover:bg-secondary transition cursor-pointer"
-            >
-              <Play className="h-4 w-4" /> View Profile
-            </a> */}
           </motion.div>
 
 

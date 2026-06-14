@@ -24,7 +24,7 @@ function Index() {
       <Hero />
       {/* <Beyond /> */}
       <Opportunity />
-      {/* <Curriculum /> */}
+      <Curriculum />
       <Community />
       <Competition />
       <Mentorship />

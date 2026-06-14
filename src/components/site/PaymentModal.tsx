@@ -43,9 +43,9 @@ export function PaymentModal({ children }: { children: React.ReactNode }) {
       <DialogTrigger asChild>{children}</DialogTrigger>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-center text-2xl">Join the Community</DialogTitle>
+          <DialogTitle className="text-center text-2xl font-bold">Secure Your Bootcamp Slot</DialogTitle>
           <DialogDescription className="text-center">
-            Complete your payment to access the AbbacusLearning community
+            Complete your transfer to join the next cohort of Machine Learning Engineers
           </DialogDescription>
         </DialogHeader>
 
@@ -86,6 +86,31 @@ export function PaymentModal({ children }: { children: React.ReactNode }) {
             </div>
           </div>
 
+          {/* Local Objection-Handling & Trust Factors */}
+          <div className="rounded-xl border bg-slate-50 dark:bg-zinc-900/40 p-4 space-y-3 text-xs text-muted-foreground">
+            <p className="font-bold text-neutral-800 dark:text-neutral-200 text-sm">
+              Why you can enroll with confidence:
+            </p>
+            <div className="flex items-start gap-2">
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-blue mt-1.5 flex-shrink-0" />
+              <p>
+                <strong className="text-neutral-700 dark:text-neutral-300">No high-end GPU required:</strong> Code, train, and test all models on free Google Colab & Kaggle cloud servers directly in your browser.
+              </p>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-blue mt-1.5 flex-shrink-0" />
+              <p>
+                <strong className="text-neutral-700 dark:text-neutral-300">Built for local constraints:</strong> Sessions are recorded and optimized into downloadable files. Power or internet issues won't derail you.
+              </p>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="h-1.5 w-1.5 rounded-full bg-brand-blue mt-1.5 flex-shrink-0" />
+              <p>
+                <strong className="text-neutral-700 dark:text-neutral-300">14-Day 100% Refund Policy:</strong> Attend the first 2 weeks. If you don't feel you're on path to building real models, get a full, prompt refund.
+              </p>
+            </div>
+          </div>
+
           <div className="rounded-xl border bg-amber-50 border-amber-200 p-4 space-y-2">
             <div className="flex items-start gap-2">
               <Wallet className="h-4 w-4 text-amber-600 mt-0.5 flex-shrink-0" />
@@ -97,7 +122,7 @@ export function PaymentModal({ children }: { children: React.ReactNode }) {
               </div>
             </div>
             <a
-              href={`https://wa.me/${whatsappNumber}`}
+              href={`https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}`}
               target="_blank"
               rel="noreferrer"
               className="mt-2 w-full inline-flex items-center justify-center gap-2 rounded-full bg-green-600 text-white text-sm font-medium px-4 py-2.5 hover:bg-green-700 transition cursor-pointer"
@@ -108,7 +133,7 @@ export function PaymentModal({ children }: { children: React.ReactNode }) {
 
           <p className="text-xs text-center text-muted-foreground">
             Having issues? Reach out to{" "}
-            <a href={`https://wa.me/${whatsappNumber}`} className="text-brand-blue underline underline-offset-2">
+            <a href={`https://wa.me/${whatsappNumber.replace(/[^0-9]/g, "")}`} className="text-brand-blue underline underline-offset-2">
               our support team
             </a>
           </p>

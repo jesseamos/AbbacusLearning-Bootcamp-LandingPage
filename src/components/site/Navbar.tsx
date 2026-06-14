@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from "motion/react";
 
 const links = [
   { label: "About", href: "#about" },
-  // { label: "Curriculum", href: "#curriculum" },
+  { label: "Curriculum", href: "#curriculum" },
   { label: "Community", href: "#community" },
   { label: "Speakers", href: "#mentorship" },
   { label: "Testimonials", href: "#testimonials" },
@@ -74,7 +74,7 @@ export function Navbar() {
             href="#cta"
             className="hidden sm:inline-flex items-center rounded-full cta-primary-button text-white text-xs sm:text-sm font-medium px-4 py-2 shadow-glow hover:brightness-110 transition"
           >
-            Join Free Class
+            Join Bootcamp
           </a>
 
           {/* RESPONSIVE BURGER TRIGGER */}
@@ -120,7 +120,7 @@ export function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className="w-full justify-center inline-flex items-center rounded-xl cta-primary-button text-white text-sm font-medium py-3 shadow-glow transition"
               >
-                Join Free Intro AI Class
+                Join Bootcamp
               </a>
             </div>
           </motion.div>

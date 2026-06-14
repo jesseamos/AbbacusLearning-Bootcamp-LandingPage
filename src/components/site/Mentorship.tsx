@@ -10,7 +10,7 @@ const speaker = {
   bio: "Chibuike is the founder of Flowk, an AI-powered customer support platform helping businesses automate conversations while maintaining human oversight. Through this session, he'll share lessons from building AI products, scaling technology teams, and creating solutions that solve real business problems.",
   time: "14:00 UTC // Tech Stage A",
   image: "/speaker.png",
-  linkedin: "htthttps://www.linkedin.com/in/chibex/",
+  linkedin: "https://www.linkedin.com/in/chibex/",
   product: {
     name: "Flowk",
     url: "https://flowk.kemonai.com"
@@ -94,20 +94,22 @@ export function Mentorship() {
                     {speaker.bio}
                   </p>
 
-                  <div className="mt-6">
+                  <div className="mt-6 flex items-center gap-4">
                     <a
-                      href={speaker.linkedin}
-                      className="inline-flex items-center gap-2 rounded-full cta-primary-button text-xs  tracking-wider text-white font-medium px-5   transition cursor-pointer group"
-                    >   <Linkedin className="h-3.5 w-3.5 transform group-hover:translate-x-1 transition-transform  group-hover:text-white" />
-                      <span>Meet Our Speakers</span>
-
+                      href="#cta"
+                      className="inline-flex items-center gap-2 rounded-full cta-primary-button text-xs tracking-wider text-white font-medium px-6 py-3 transition cursor-pointer group"
+                    >
+                      <span>Join The Bootcamp</span>
+                      <ArrowRight className="h-3.5 w-3.5 transform group-hover:translate-x-1 transition-transform group-hover:text-white" />
                     </a>
                     <a
-                      href={speaker.product.url}
-                      className="inline-flex items-center gap-2 rounded-full cta-primary-button text-xs  tracking-wider text-white font-medium  py-3  transition cursor-pointer group"
+                      href={speaker.linkedin}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs text-white/80 hover:text-white transition-colors underline underline-offset-4"
                     >
-                      <span>Explore Flowk</span>
-                      <ArrowRight className="h-3.5 w-3.5 transform group-hover:translate-x-1 transition-transform  group-hover:text-white" />
+                      <Linkedin className="h-3.5 w-3.5" />
+                      <span>Meet the Speaker</span>
                     </a>
                   </div>
                 </motion.div>

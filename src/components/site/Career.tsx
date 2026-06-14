@@ -65,7 +65,7 @@ export function Career() {
           </span>
         </h2>
         <p className="mb-6 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
-          Building skills is only part of the journey. We help you understand the technology landscape, showcase your work, build your professional presence, and prepare for future opportunities in tech.
+          We don't just teach you machine learning. We help you clean up your GitHub profile, optimize your LinkedIn to trigger global recruiter search alerts, and pass technical interviews.
         </p>
       </div>
 

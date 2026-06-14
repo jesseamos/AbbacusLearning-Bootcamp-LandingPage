@@ -30,8 +30,8 @@ export function Community() {
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-6 text-lg text-muted-foreground max-w-lg">
-              The fastest way to grow isn't learning alone. It's learning with people who challenge you, support you, and are building toward the same future.
+            <p className="mt-6 text-lg text-muted-foreground max-w-lg leading-relaxed">
+              Unlock a network of 1,200+ Nigerian developers who pair program, share remote job referrals, and audit each other’s code daily. Don't build in isolation.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
