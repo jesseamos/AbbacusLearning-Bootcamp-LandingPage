@@ -14,7 +14,7 @@ export function Hero() {
     <section id="top" className="relative pt-36 pb-24 overflow-hidden">
       {/* Background Image */}
       <div
-        className="absolute inset-0 bg-no-repeat bg-contain bg-center pointer-events-none"
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center pointer-events-none"
         style={{
           backgroundImage: "url('pattern_bg.png')",
         }}
