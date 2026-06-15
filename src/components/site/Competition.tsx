@@ -20,7 +20,7 @@ const items = [
     icon: GraduationCap,
     title: "Mentor Feedback",
     description: "Present your work and receive guidance from experienced founders, engineers, and technology leaders.",
-    image: "https://images.unsplash.com/photo-1521791136368-1a46827d0af1?auto=format&fit=crop&w=600&q=80"
+    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80"
   },
   {
     icon: Briefcase,
