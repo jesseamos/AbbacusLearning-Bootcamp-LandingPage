@@ -36,7 +36,7 @@ const months = [
 
 export function Curriculum() {
   return (
-    <section id="curriculum" className="relative py-28 overflow-hidden bg-[#DC143C]">
+    <section id="curriculum" className="relative py-28 overflow-hidden bg-brand-purple">
       {/* Background Subtle Accents */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[500px] h-[500px]  blur-[120px] rounded-full pointer-events-none" />
       <div className="absolute bottom-1/4 left-1/3 w-[400px] h-[400px] bg-brand-blue/5 blur-[100px] rounded-full pointer-events-none" />
@@ -87,7 +87,7 @@ export function Curriculum() {
 
                     {/* Text Title Block */}
                     <div className={`space-y-2 ${isEven ? "md:text-right md:pr-12" : "md:order-2 md:text-left md:pl-12"}`}>
-                      <span className="inline-block text-xs font-medium tracking-widest text-black">
+                      <span className="inline-block text-xs font-medium tracking-widest text-white">
                         {m.tag}
                       </span>
                       <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">

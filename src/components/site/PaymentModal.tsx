@@ -15,7 +15,7 @@ const bankDetails = {
   number: "9135652318",
 };
 
-const whatsappNumber = "+23490928666";
+const whatsappNumber = "+2349090928666";
 
 function CopyButton({ text }: { text: string }) {
   const [copied, setCopied] = useState(false);
@@ -41,7 +41,8 @@ export function PaymentModal({ children }: { children: React.ReactNode }) {
   return (
     <Dialog>
       <DialogTrigger asChild>{children}</DialogTrigger>
-      <DialogContent className="sm:max-w-md">
+      {/* Added max-h-[85vh], overflow-y-auto, and pr-2 to enable smooth internal scrolling */}
+      <DialogContent className="sm:max-w-md max-h-[85vh] overflow-y-auto pr-4 md:pr-6">
         <DialogHeader>
           <DialogTitle className="text-center text-2xl font-bold">Secure Your Bootcamp Slot</DialogTitle>
           <DialogDescription className="text-center">
