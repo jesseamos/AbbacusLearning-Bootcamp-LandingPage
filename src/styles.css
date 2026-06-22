@@ -179,6 +179,10 @@
     background-color: var(--brand-purple)
   }
 
+  .bg-brand-red{
+    background-color: #DC143C;
+  }
+
   .gradient-border::before {
     content: "";
     position: absolute;

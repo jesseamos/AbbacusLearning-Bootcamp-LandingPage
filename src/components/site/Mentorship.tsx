@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "motion/react";
 import { Reveal } from "./Reveal";
 import { Linkedin, ArrowUpRight, ArrowRight } from "lucide-react";
+import { JoinFreeButton } from "../ui/cta-button";
 
 const speaker = {
   name: "Chibuike (C.) Mba",
@@ -19,12 +20,30 @@ const speaker = {
 
 export function Mentorship() {
   return (
-    <section id="mentorship" className="relative py-8 overflow-hidden bg-brand-blue">
-
+    <section id="mentorship" className="relative py-24 overflow-hidden">
+    <div
+        className="absolute inset-0 bg-no-repeat bg-cover bg-center pointer-events-none"
+        style={{
+          backgroundImage: "url('pattern_bg.png')",
+        }}
+      />
 
 
       {/* FOREGROUND LAYOUT CONTAINER (z-10 ensures absolute visibility over pattern) */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6 text-white">
+      <div className="relative z-10 mx-auto max-w-7xl px-6">
+        <div className="max-w-2xl mb-5">
+            <Reveal delay={0.05}>
+              <h2 className="mt-3 text-4xl sm:text-5xl font-medium tracking-tight leading-tight text-neutral-900 dark:text-neutral-50">
+               Abbacus 2026 <br /> <span className="text-brand-blue">Guest Speaker: Chibuke C.</span> 
+              </h2>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed mb-3">
+              Founder, Flowk. Get ready for an insider’s look into the tech industry, deployment secrets, and what founders actually look for when hiring AI talent.
+              </p>
+            </Reveal>
+            < JoinFreeButton/>
+          </div>
 
         {/* Header Section */}
 
@@ -79,7 +98,7 @@ export function Mentorship() {
                     <Reveal delay={0.05}>
 
                       <h3 className="text-4xl sm:text-3xl tracking-tighter leading-none font-medium">
-                        How Flowk Is Using AI To Transform <br /> Customer Support Across Africa
+                      Using AI To Transform <br /> Customer Support Across Africa
                       </h3>
                     </Reveal>
                     <Reveal delay={0.1}>
@@ -96,21 +115,13 @@ export function Mentorship() {
 
                   <div className="mt-6 flex items-center gap-4">
                     <a
-                      href="#cta"
+                      href={speaker.linkedin}
                       className="inline-flex items-center gap-2 rounded-full cta-primary-button text-xs tracking-wider text-white font-medium px-6 py-3 transition cursor-pointer group"
                     >
-                      <span>Join The Bootcamp</span>
+                      <span>Meet the Speaker</span>
                       <ArrowRight className="h-3.5 w-3.5 transform group-hover:translate-x-1 transition-transform group-hover:text-white" />
                     </a>
-                    <a
-                      href={speaker.linkedin}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center gap-1.5 text-xs text-white/80 hover:text-white transition-colors underline underline-offset-4"
-                    >
-                      <Linkedin className="h-3.5 w-3.5" />
-                      <span>Meet the Speaker</span>
-                    </a>
+                 
                   </div>
                 </motion.div>
               </AnimatePresence>

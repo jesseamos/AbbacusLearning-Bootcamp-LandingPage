@@ -8,6 +8,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import { useEffect, useState } from "react";
+import { JoinFreeButton } from "../ui/cta-button";
 
 const items = [
   {
@@ -47,107 +48,49 @@ export function Competition() {
   }, []);
 
   const currentItem = items[activeIndex];
-
   return (
-    <section id="career-clinic" className="relative py-28 overflow-hidden bg-white">
+    <section id="community" className="relative py-28 bg-white">
+      <div className="relative mx-auto max-w-7xl px-6 grid lg:grid-cols-2 gap-14 items-center">
+     
 
-      {/* FOREGROUND LAYOUT CONTAINER (z-10 ensures absolute visibility over pattern) */}
-      <div className="relative z-10 mx-auto max-w-7xl px-6">
+        <div className="gradient-border relative overflow-hidden  rounded-3xl">
+          <div className="relative w-full h-[400px] sm:h-[480px] md:h-[540px] bg-linear-to-br from-[#0e0a2e] via-[#1a1148] to-[#0c2a6b]">
 
-        {/* Header Section */}
-        <div className="max-w-3xl mb-16">
+            {/* Profile Image Asset Container */}
+            <img
+              src="screaming.jpg" // Replace with your image location path
+              alt="Instructor Profile Showcase"
+              className="w-full h-full object-cover select-none"
+            />
+
+            {/* Mac-style Window Dot Accents */}
+            <div className="absolute top-4 left-4 flex gap-1.5 z-10 pointer-events-none">
+              <span className="h-2.5 w-2.5 rounded-full bg-white/40" />
+              <span className="h-2.5 w-2.5 rounded-full bg-white/40" />
+              <span className="h-2.5 w-2.5 rounded-full bg-white/40" />
+            </div>
+
+            {/* Subtle Linear Vignette Shadow at bottom */}
+            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />
+
+            {/* Decorative Corner Flare */}
+            <div className="absolute -bottom-6 -right-6 h-40 w-40 rounded-full bg-[#FFCE21]/20 blur-3xl pointer-events-none" />
+          </div>
+        </div>
+           <div>
+
           <Reveal delay={0.05}>
-
-            <h2 className="text-4xl sm:text-6xl tracking-tighter leading-none font-medium">
-              Build Something
-              <br />
-              <span className="text-gradient-brand">
-                Worth Showing.
-              </span>
+            <h2 className="mt-3 text-4xl sm:text-5xl font-medium tracking-tight leading-tight">
+            We’re Building Out Loud <br />
+              <span className="text-brand-blue font-bold">Making Noise</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="mt-6 text-base sm:text-lg text-muted-foreground max-w-2xl leading-relaxed">
-              Recruiters don't care about certificates. They care about working code. You'll build team projects designed to prove you can solve real business problems, version control code on GitHub, and pitch to international companies.
+            <p className="mt-6 mb-3 text-lg text-muted-foreground max-w-lg leading-relaxed">
+             The tech world doesn’t just reward what you know; it rewards what you can show. We build our AI projects completely in public, creating massive buzz on  LinkedIn and Twitter. By the time you graduate, international recruiters will already know your name and your work.
             </p>
           </Reveal>
-        </div>
-
-        {/* Dynamic Display Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-
-          {/* LEFT COLUMN: Clean Image Card Showcase */}
-          <div className=" relative overflow-hidden rounded-3xl order-2 lg:order-1 ">
-            <div className="relative w-full h-[350px] sm:h-[450px] md:h-[480px]">
-
-              {/* AnimatePresence for clean cross-fade action */}
-              <AnimatePresence mode="wait">
-                <motion.img
-                  key={activeIndex}
-                  src={currentItem.image}
-                  alt={currentItem.title}
-                  initial={{ opacity: 0, scale: 1.02 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.4, ease: "easeInOut" }}
-                  className="w-full h-full object-cover select-none contrast-[1.05] brightness-90  hover:grayscale-0 transition-all duration-700"
-                />
-              </AnimatePresence>
-
-              {/* Mac-style Window Dot Accents */}
-              <div className="absolute top-4 left-4 flex gap-1.5 z-10 pointer-events-none">
-                <span className="h-2 w-2 rounded-full bg-white/30" />
-                <span className="h-2 w-2 rounded-full bg-white/30" />
-                <span className="h-2 w-2 rounded-full bg-white/30" />
-              </div>
-
-              {/* Subtle bottom shading gradient */}
-              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0e0a2e] via-transparent to-transparent pointer-events-none" />
-            </div>
-          </div>
-
-          {/* RIGHT COLUMN: Copy and Controls */}
-          <div className="order-1 lg:order-2 flex flex-col justify-center">
-
-            {/* Height safety zone to offset layout shift during text rotation */}
-            <div className="min-h-[220px] sm:min-h-[180px] flex flex-col justify-center">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeIndex}
-                  initial={{ opacity: 0, x: 10 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  exit={{ opacity: 0, x: -10 }}
-                  transition={{ duration: 0.35, ease: "easeOut" }}
-                >
-
-
-                  <h3 className="text-3xl sm:text-4xl font-medium tracking-tight">
-                    {currentItem.title}
-                  </h3>
-
-                  <p className="mt-4 text-sm sm:text-base text-zinc-400 leading-relaxed max-w-xl">
-                    {currentItem.description}
-                  </p>
-
-                </motion.div>
-              </AnimatePresence>
-            </div>
-
-            {/* Minimal Technical Indicators */}
-            <div className="mt-10 flex gap-2.5 items-center">
-              {items.map((_, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActiveIndex(i)}
-                  className={`h-1 rounded-full transition-all duration-300 ${activeIndex === i
-                    ? "w-8 bg-gradient-brand bg-white"
-                    : "w-1 bg-zinc-800 hover:bg-zinc-600"
-                    }`}
-                  aria-label={`Switch to slide ${i + 1}`}
-                />
-              ))}
-            </div>
-          </div>
+        < JoinFreeButton/>
 
         </div>
       </div>

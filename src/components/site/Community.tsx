@@ -1,5 +1,5 @@
+import { JoinFreeButton } from "../ui/cta-button";
 import { Reveal } from "./Reveal";
-import { motion } from "motion/react";
 
 const chats = [
   { name: "Amaka", msg: "Just deployed my first ML model 🚀", color: "from-pink-400 to-fuchsia-500" },
@@ -25,17 +25,17 @@ export function Community() {
 
           <Reveal delay={0.05}>
             <h2 className="mt-3 text-4xl sm:text-5xl font-medium tracking-tight leading-tight">
-              Don't Learn Alone.<br />
-              <span className="text-brand-blue"> Grow With Builders.</span>
+             No Solo Journeys.<br />
+              <span className="text-brand-blue font-bold"> We Win Together.</span>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-6 text-lg text-muted-foreground max-w-lg leading-relaxed">
-              Unlock a network of 1,200+ Nigerian developers who pair program, share remote job referrals, and audit each other’s code daily. Don't build in isolation.
+           Trying to master advanced AI by yourself is a shortcut to burnout. Here, you are surrounded by hungry developers, sharing breakthroughs, getting instant code reviews, and pushing each other to build bigger things daily. You come for the knowledge; you stay for the network.
             </p>
           </Reveal>
           <Reveal delay={0.15}>
-            <div className="mt-8 flex -space-x-3">
+            <div className="mt-8 flex -space-x-3 mb-3">
               {avatars.map((a, i) => (
                 <div
                   key={i}
@@ -49,6 +49,7 @@ export function Community() {
               </div>
             </div>
           </Reveal>
+           < JoinFreeButton/>
 
         </div>
 

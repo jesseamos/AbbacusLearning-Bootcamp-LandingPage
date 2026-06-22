@@ -26,11 +26,11 @@ function Index() {
       <Hero />
       {/* <Beyond /> */}
       <Opportunity />
-      <Curriculum />
       <Community />
       <Competition />
-      <Mentorship />
       <Career />
+       <Curriculum />
+      <Mentorship />
       <Testimonials />
       <About />
       <FinalCTA />
