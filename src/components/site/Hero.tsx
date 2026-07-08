@@ -97,6 +97,7 @@ export function Hero() {
              <PaymentModal>
               <a
               href="#cta"
+              onClick={() => window.fbq?.("track", "LearnWithCommunity")}
               className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white backdrop-blur-sm font-medium px-8 py-4 transition cursor-pointer text-base w-full sm:w-auto text-center"
             >
               Learn with the Community

@@ -23,6 +23,7 @@ export function JoinFreeButton() {
         href="https://chat.whatsapp.com/G3aVPY9CmonGSdczV8QkW5"
         target="_blank"
         rel="noopener noreferrer"
+        onClick={() => window.fbq?.("track", "JoinFreeButton")}
         
         // Urgency Zoom Repeat: Snappy double-pulse, then brief pause
         animate={{ 
