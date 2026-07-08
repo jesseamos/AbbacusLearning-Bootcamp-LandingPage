@@ -13,6 +13,8 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { About } from "@/components/site/About";
 import { FinalCTA } from "@/components/site/FinalCTA";
 import { Footer } from "@/components/site/Footer";
+import { Header } from "@radix-ui/react-accordion";
+import { CustomHeader } from "@/components/site/CustomHeader";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -21,8 +23,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="relative bg-slate-100">
-      <CountdownBanner />
-      <Navbar />
+     <CustomHeader/>
       <Hero />
       <Opportunity />
       {/* <FreeVsBootcamp />  */}

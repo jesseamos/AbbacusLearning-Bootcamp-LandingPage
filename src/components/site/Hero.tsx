@@ -45,7 +45,7 @@ export function Hero() {
   }, [displayedText, isDeleting, currentWordIndex]);
 
   return (
-    <section id="top" className="relative pt-36 pb-24 overflow-hidden">
+    <section id="top" className="relative pt-44 md:pt-36 pb-24 overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-no-repeat bg-cover bg-center pointer-events-none"
@@ -73,7 +73,7 @@ export function Hero() {
               <span className="animate-pulse ml-0.5 font-light">|</span>
             </span>
             <br />
-            <span className=""> Start Your AI Journey</span> Zero <span className="text-brand-blue font-bold">Experience </span>Needed.
+            <span className=""> Join Our <span className="text-brand-blue font-bold">FREE</span> AI Intro Class Today </span> No <span className="text-brand-blue font-bold">Experience </span>Needed.
           </motion.h1>
 
           <motion.p

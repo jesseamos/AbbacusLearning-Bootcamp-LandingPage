@@ -55,12 +55,12 @@ export function CountdownBanner() {
             transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
             className="inline-flex h-2 w-2 rounded-full bg-brand-red shadow-[0_0_8px_#ff0000]" 
           />
-          <span className="tracking-wide font-semibold text-gray-200 flex items-center gap-1">
+          <span className="tracking-wide font-semibold text-gray-200 flex items-center gap-1 text-base md:text-lg">
             Cohort Applications Close In:
           </span>
           
           {/* Popping Timer Blocks */}
-          <div className="flex gap-1 font-mono font-bold bg-black/60 border border-neutral-800 px-2.5 py-1 rounded text-brand-yellow min-w-[110px] shadow-inner">
+          <div className="flex gap-1 font-mono font-bold bg-black/60 border border-neutral-800 px-2.5 py-1 rounded text-brand-yellow min-w-[110px] shadow-inner text-base md:text-lg">
             <AnimatePresence mode="popLayout">
               <motion.span key={timeLeft.days} initial={{ y: -4, opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: 4, opacity: 0 }} transition={{ duration: 0.15 }}>
                 {String(timeLeft.days).padStart(2, "0")}d

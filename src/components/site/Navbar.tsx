@@ -22,12 +22,12 @@ export function Navbar() {
   }, []);
 
   return (
-    <motion.header
-      initial={{ y: -20, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6 }}
-      className="fixed top-16 sm:top-12 inset-x-0 z-40 flex flex-col items-center px-4 gap-2"
-    >
+  <motion.header
+  initial={{ y: -20, opacity: 0 }}
+  animate={{ y: 0, opacity: 1 }}
+  transition={{ duration: 0.6 }}
+  className="w-full inset-x-0 flex flex-col items-center px-4"
+>
       {/* PRIMARY CAPSULE HEADER */}
       <nav
         className={`w-full max-w-5xl flex items-center justify-between rounded-full px-4 py-2 transition-all duration-300 ${scrolled || isOpen ? "glass shadow-soft" : "bg-white/40 backdrop-blur-sm"
