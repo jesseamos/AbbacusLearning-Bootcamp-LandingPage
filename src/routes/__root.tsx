@@ -5,6 +5,7 @@ import {
   createRootRouteWithContext,
   useRouter,
 } from "@tanstack/react-router";
+import { useMetaPixel } from "../hooks/use-meta-pixel";
 
 function NotFoundComponent() {
   return (
@@ -71,6 +72,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
+  useMetaPixel();
 
   return (
     <QueryClientProvider client={queryClient}>
