@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { CountdownBanner } from "@/components/site/CountdownBanner";
 import { Navbar } from "@/components/site/Navbar";
 import { Hero } from "@/components/site/Hero";
-import { Beyond } from "@/components/site/Beyond";
+import {  FreeVsBootcamp } from "@/components/site/Beyond";
 import { Opportunity } from "@/components/site/Opportunity";
 import { Curriculum } from "@/components/site/Curriculum";
 import { Community } from "@/components/site/Community";
@@ -24,8 +24,9 @@ function Index() {
       <CountdownBanner />
       <Navbar />
       <Hero />
-      {/* <Beyond /> */}
       <Opportunity />
+      {/* <FreeVsBootcamp />  */}
+      
       <Community />
       <Competition />
       <Career />

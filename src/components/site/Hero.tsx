@@ -11,7 +11,7 @@ const badges = [
   { icon: Globe, label: "Work from Nigeria" },
 ];
 
-const wordsToType = ["Build.", "Certify.", "Mentor.", "Grow."];
+const wordsToType = ["Learn.", "Build.", "Practice.", "Succeed."];
 
 export function Hero() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
@@ -73,7 +73,7 @@ export function Hero() {
               <span className="animate-pulse ml-0.5 font-light">|</span>
             </span>
             <br />
-            <span className="">Kickstart your <span className="text-brand-blue font-bold">Machine Learning </span> journey in <span className="text-brand-blue font-bold">2026</span>.</span>
+            <span className=""> Start Your AI Journey</span> Zero <span className="text-brand-blue font-bold">Experience </span>Needed.
           </motion.h1>
 
           <motion.p

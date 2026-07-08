@@ -182,6 +182,9 @@
   .bg-brand-red{
     background-color: #DC143C;
   }
+   .text-brand-red{
+    color: #DC143C;
+  }
 
   .gradient-border::before {
     content: "";
